@@ -32,6 +32,7 @@ app.use(bodyParser.json());
 //=============== REGISTER OUR ROUTES -------------------------------
 //routes
 app.use('/products', product);
+app.get('/', (req, res) => res.send('Hello World!'))
 //======================= START THE SERVER====================
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
